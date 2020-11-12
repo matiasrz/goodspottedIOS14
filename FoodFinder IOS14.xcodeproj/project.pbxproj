@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		241CF2B8255C741E009FFA1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CF2B7255C741E009FFA1D /* AppDelegate.swift */; };
 		241CF2BA255C741E009FFA1D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CF2B9255C741E009FFA1D /* SceneDelegate.swift */; };
-		241CF2BC255C741E009FFA1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CF2BB255C741E009FFA1D /* ViewController.swift */; };
+		241CF2BC255C741E009FFA1D /* ExploreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241CF2BB255C741E009FFA1D /* ExploreViewController.swift */; };
 		241CF2BF255C741E009FFA1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241CF2BD255C741E009FFA1D /* Main.storyboard */; };
 		241CF2C1255C741F009FFA1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 241CF2C0255C741F009FFA1D /* Assets.xcassets */; };
 		241CF2C4255C741F009FFA1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 241CF2C2255C741F009FFA1D /* LaunchScreen.storyboard */; };
+		24AA49B7255D483C0031A014 /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA49B6255D483C0031A014 /* StoreManager.swift */; };
+		24AA49BA255D49420031A014 /* StoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA49B9255D49420031A014 /* StoreModel.swift */; };
+		24AA49BD255D4F420031A014 /* StoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AA49BC255D4F420031A014 /* StoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		241CF2B4255C741E009FFA1D /* FoodFinder IOS14.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FoodFinder IOS14.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		241CF2B7255C741E009FFA1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		241CF2B9255C741E009FFA1D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		241CF2BB255C741E009FFA1D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		241CF2BB255C741E009FFA1D /* ExploreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewController.swift; sourceTree = "<group>"; };
 		241CF2BE255C741E009FFA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		241CF2C0255C741F009FFA1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		241CF2C3255C741F009FFA1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		241CF2C5255C741F009FFA1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24AA49B6255D483C0031A014 /* StoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreManager.swift; sourceTree = "<group>"; };
+		24AA49B9255D49420031A014 /* StoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreModel.swift; sourceTree = "<group>"; };
+		24AA49BC255D4F420031A014 /* StoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				241CF2B7255C741E009FFA1D /* AppDelegate.swift */,
 				241CF2B9255C741E009FFA1D /* SceneDelegate.swift */,
-				241CF2BB255C741E009FFA1D /* ViewController.swift */,
-				241CF2BD255C741E009FFA1D /* Main.storyboard */,
+				24AA49B5255D47CC0031A014 /* Models */,
+				24AA49B4255D47B50031A014 /* Views */,
+				241CF2CD255C76AD009FFA1D /* Controllers */,
 				241CF2C0255C741F009FFA1D /* Assets.xcassets */,
 				241CF2C2255C741F009FFA1D /* LaunchScreen.storyboard */,
 				241CF2C5255C741F009FFA1D /* Info.plist */,
 			);
 			path = "FoodFinder IOS14";
+			sourceTree = "<group>";
+		};
+		241CF2CD255C76AD009FFA1D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				241CF2BB255C741E009FFA1D /* ExploreViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		24AA49B4255D47B50031A014 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				241CF2BD255C741E009FFA1D /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		24AA49B5255D47CC0031A014 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				24AA49BC255D4F420031A014 /* StoreData.swift */,
+				24AA49B6255D483C0031A014 /* StoreManager.swift */,
+				24AA49B9255D49420031A014 /* StoreModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				241CF2BC255C741E009FFA1D /* ViewController.swift in Sources */,
+				241CF2BC255C741E009FFA1D /* ExploreViewController.swift in Sources */,
+				24AA49B7255D483C0031A014 /* StoreManager.swift in Sources */,
 				241CF2B8255C741E009FFA1D /* AppDelegate.swift in Sources */,
+				24AA49BD255D4F420031A014 /* StoreData.swift in Sources */,
 				241CF2BA255C741E009FFA1D /* SceneDelegate.swift in Sources */,
+				24AA49BA255D49420031A014 /* StoreModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8KV22J9UH;
 				INFOPLIST_FILE = "FoodFinder IOS14/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X8KV22J9UH;
 				INFOPLIST_FILE = "FoodFinder IOS14/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
